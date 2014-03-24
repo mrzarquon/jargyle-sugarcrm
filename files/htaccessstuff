@@ -1,0 +1,22 @@
+Creating Sugar configuration file (config.php)
+Cannot write to the .htaccess file.
+
+If you want to secure your log file from being accessible via browser, create an .htaccess file in your log directory with the line:
+
+# BEGIN SUGARCRM RESTRICTIONS RedirectMatch 403 (?i).*\.log$ RedirectMatch 403 (?i)/+not_imported_.*\.txt RedirectMatch 403 (?i)/+(soap|cache|xtemplate|data|examples|include|log4php|metadata|modules)/+.*\.(php|tpl) RedirectMatch 403 (?i)/+emailmandelivery\.php RedirectMatch 403 (?i)/+upload RedirectMatch 403 (?i)/+custom/+blowfish RedirectMatch 403 (?i)/+cache/+diagnostic RedirectMatch 403 (?i)/+files\.md5$ # END SUGARCRM RESTRICTIONS
+Creating Sugar application tables, audit tables and relationship metadata
+Creating the database sugarcrm on 127.0.0.1...done
+.................................................
+
+Creating default Sugar data
+
+     Creating default users...   done
+     Creating default scheduler jobs...   done
+
+Populating the database tables with demo data (this may take a little while)
+
+
+The setup of Sugar 6.5.16 is now complete!
+
+Total time: 7.881716966629 seconds.
+Approximate memory used: 87019424 bytes.
